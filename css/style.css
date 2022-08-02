@@ -289,6 +289,7 @@ html {
   width: 100vw;
   height: 1000px;
   margin-top: 110px;
+  margin-bottom: 400px;
   position: relative;
 }
 .game-intro .game-intro-block .game-intro-back {
@@ -305,15 +306,26 @@ html {
   top: 0;
   left: 0;
 }
-
 .game-intro .game-intro-block .intro-section .intro-block {
   position: absolute;
   width: 390px;
   height: 400px;
+
+  box-sizing: border-box;
+}
+
+.game-intro .game-intro-block .intro-section .intro-block:not(:last-child) {
+  padding: 48px;
   border-radius: 20px;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.19);
   background-color: white;
 }
+
+.game-intro .game-intro-block .intro-section .intro-block .last-block-img {
+  width: 100%;
+  height: 100%;
+}
+
 .game-intro .game-intro-block .intro-block:first-child {
   top: 0;
   left: 15em;
@@ -330,10 +342,7 @@ html {
   bottom: -150px;
   right: 15em;
 }
-.game-intro .game-intro-block .intro-block {
-  box-sizing: border-box;
-  padding: 48px;
-}
+
 .game-intro .game-intro-block .intro-block .intro-title-area {
   display: flex;
   text-align: left;
@@ -375,3 +384,169 @@ html {
 .game-intro .game-intro-block .intro-block .intro-button-area span:first-child {
   margin-right: 30px;
 }
+
+.recru {
+  width: 100vw;
+  height: 700px;
+  background-color: #da392b;
+}
+.recru .recru-back-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.recru .recru-back-img .recru-text,
+.recru .recru-back-img .recru-img {
+  width: 50%;
+}
+
+.recru .recru-back-img .recru-text .recru-text-area {
+  color: #ffffff;
+  margin: 50px 0 0 100px;
+}
+.recru .recru-back-img .recru-text .recru-text-area h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 3;
+}
+
+.recru .recru-back-img .recru-text .recru-text-area p {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+  word-break: break-all;
+}
+
+.recru .recru-back-img .recru-text .recru-text-area button {
+  margin-top: 50px;
+  width: 150px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  background: #fcff72;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.45s linear;
+}
+.recru .recru-back-img .recru-text .recru-text-area button:hover {
+  background-color: #ffffff;
+}
+
+.recru .recru-back-img .recru-img {
+  margin: auto 0px -2px auto;
+}
+
+.recru .recru-back-img .recru-img .recru-img-box img {
+  width: 15rem;
+  height: 50%;
+  margin-left: 300px;
+}
+
+.contact {
+  width: 100vw;
+  height: 700px;
+  background: url("/img/mario-back.png") 0 center / 100% 150% no-repeat;
+}
+.contact .contact-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.contact .contact-area .contact-box,
+.contact .contact-area .news-box {
+  width: 50%;
+}
+
+.contact .contact-area .contact-box .contact-form-box {
+  width: 55%;
+  height: 90%;
+  background-color: #ffffff;
+  border-radius: 35px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contact .contact-area .contact-box .contact-form-box h1 {
+  font-size: 1.7rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.contact .contact-area .contact-box .contact-form-box p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  word-break: keep-all;
+  margin-bottom: 30px;
+}
+
+.contact .contact-area .contact-box .contact-form-box .cantact-name {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact-area .contact-box .contact-form-box .cantact-name .name-box {
+  box-sizing: border-box;
+}
+.contact .contact-area .contact-box label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.contact .contact-area .contact-box input {
+  height: 40px;
+  margin: 10px 0 20px 0;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-sizing: content-box;
+
+  padding-left: 10px;
+}
+.contact .contact-area .contact-box input:hover,
+.contact
+  .contact-area
+  .contact-box
+  .contact-form-box
+  .input-box
+  #message:hover {
+  border: 2px solid black;
+  box-sizing: content-box;
+}
+
+.contact .contact-area .contact-box input:focus {
+  border: 2px solid #da392b;
+}
+
+.contact .contact-area .contact-box .contact-form-box .input-box #email,
+.contact .contact-area .contact-box .contact-form-box .input-box #message {
+  width: 100%;
+}
+
+.contact .contact-area .contact-box .contact-form-box .input-box #message {
+  height: 9rem;
+  margin: 10px 0 15px 0;
+  border-radius: 8px;
+  resize: none;
+  font-size: 1.1rem;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  outline-color: #da392b;
+  padding-left: 10px;
+}
+
+.contact .contact-area .contact-box .contact-form-box button {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #2b2a29;
+  color: #ffffff;
+  font-size: 1.1rem;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+/* .contact .contact-area .contact-box .contact-form-box .contact-name input{
+
+} */
